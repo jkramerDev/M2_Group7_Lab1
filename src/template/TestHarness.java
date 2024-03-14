@@ -17,8 +17,8 @@ public class TestHarness {
 		init();
 		
 		//TODO: 2 cases:
-		//display non equality using your overriden equals method
-		//display equality using your overriden equals method
+		//display non equality using your overridden equals method
+		//display equality using your overridden equals method
 
 		TEST_Equals(p1, p2);
 		TEST_Equals(p3, p3);
@@ -141,7 +141,7 @@ public class TestHarness {
 		System.out.println("Adding Entries to the phonebook ....\n");
 		TimeUnit.SECONDS.sleep(1);
 
-		phonebook.put(p1, p1.getPhonebookEntries()); // put ultimately calls overriden hashCode
+		phonebook.put(p1, p1.getPhonebookEntries()); // put ultimately calls overridden hashCode
 		phonebook.put(p2, p2.getPhonebookEntries());
 		phonebook.put(p3, p3.getPhonebookEntries());
 		phonebook.put(p4, p4.getPhonebookEntries());
