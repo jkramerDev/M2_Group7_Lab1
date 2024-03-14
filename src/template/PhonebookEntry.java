@@ -29,7 +29,7 @@ class PhonebookEntry {
 		return type;
 	}
 	
-	// 
+	// Method to override toString()
 	public String toString() {
 		return getPhoneNumber() + " " + getType();
 	}

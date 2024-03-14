@@ -37,9 +37,6 @@ public class PhonebookHandler implements iPhonebookHander{
 			}
 			current++;
 		}
-		
-		
-		
 		return sortedContacts;
 	}
 	

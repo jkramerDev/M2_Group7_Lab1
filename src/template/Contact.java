@@ -39,7 +39,7 @@ class Contact {
 		return name;
 	}
 	
-	// 
+	// Method to override toString()
 	public String toString() {
 		return "Name: " + name + ", Phone Number(s): " + phonebookEntry.toString();
 	}
@@ -59,7 +59,6 @@ class Contact {
         
         return contact.getName() == this.getName()
                 && contact.getPhonebookEntries() == this.getPhonebookEntries();
-   
 	}
 	
 	// Method to override hashCode
@@ -88,9 +87,6 @@ class Contact {
 		contact2.addPhonebookEntry("2033335555", "Cell");
 		
 		System.out.println(contact1.getPhonebookEntries());
-		
-		
-		
 	}
 
 }
