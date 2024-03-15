@@ -6,7 +6,6 @@ package template;
  *   PhonebookEntry has a phoneNumber and type
  *   
  *   
- *   
  */
 
 class PhonebookEntry {
@@ -33,11 +32,5 @@ class PhonebookEntry {
 	public String toString() {
 		return getPhoneNumber() + " " + getType();
 	}
-	
-	public static void main(String[] args) {
-		PhonebookEntry phone1 = new PhonebookEntry("1034032233", "Home");
-		System.out.println(phone1.toString());
-	}
  
 }
-	

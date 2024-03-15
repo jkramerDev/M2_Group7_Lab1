@@ -14,6 +14,7 @@ public class TestHarness {
 
 
 	public static void main(String[] args) throws InterruptedException {
+		
 		init();
 		
 		//TODO: 2 cases:
@@ -44,10 +45,8 @@ public class TestHarness {
 		//(2) a call to search does not find the user & displays some detail illustrating same
 		TEST_Search(phonebookHander, sortedContacts, "Juan");
 		 
-
 	}
-
-	// 
+	
 	public static List<Contact> TEST_Sort(PhonebookHandler phonebookHandler) {
 		//TODO: call your phonebookHander & have it sort the contacts.  Return those.
 		
@@ -55,11 +54,9 @@ public class TestHarness {
 		return sortedContacts;
 	}
 
-	
 	public static void TEST_Search(PhonebookHandler phonebookHandler, List<Contact> sortedContacts, String name) {
 		//TODO: use the sorted contacts and a name to search for.  
 	  
-		
 		System.out.println("\n -- Search results for " + name + " -- ");
 		List<PhonebookEntry> selectedEntries = phonebookHander.binarySearch(sortedContacts, name);
 		for (PhonebookEntry entry : selectedEntries) {
@@ -93,7 +90,6 @@ public class TestHarness {
 		System.out.println();
 	}
  
-
 	/** TODO
 	 * 
 	 * Build 5 contacts

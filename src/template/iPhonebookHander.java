@@ -14,7 +14,7 @@ public interface iPhonebookHander {
 	 */
 	public List<PhonebookEntry> binarySearch(List<Contact> sortedContacts, String name);
 
-	//iterate over the contacts.  
-	//no sorting here, just display
+	// Iterate over the contacts; no sorting here, just display
 	public void display(List<Contact> sortedContacts);
+	
 }

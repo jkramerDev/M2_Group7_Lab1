@@ -17,7 +17,6 @@ class Contact {
 	String name; 
 	List<PhonebookEntry> phonebookEntry;
 	
-	
 	// Constructor
 	Contact(String name) {
 		this.name = name;
@@ -75,18 +74,5 @@ class Contact {
         
         return result;
     }
-	
-	// Method to override hashCode
- 	
-	public static void main(String[] args) {
-		Contact contact1 = new Contact("Jill");
-		contact1.addPhonebookEntry("2032224444", "Home");
-		System.out.println(contact1.getPhonebookEntries());
-		
-		Contact contact2 = new Contact("Bill");
-		contact2.addPhonebookEntry("2033335555", "Cell");
-		
-		System.out.println(contact1.getPhonebookEntries());
-	}
 
 }
